@@ -46,9 +46,15 @@ Then visit http://localhost:6006/
 The model (training) looks like below (Multivariate Regression: LSTM with BN + DNN):
 ![alt text](./model.jpeg)
 
-The saved model (under folder dump/0) is trained with 100000 iterations with batch size 16 and learning rate 0.0005 (with decay); its trend of learning rate and loss looks like the following during the entire training procedure:
+The saved model (under folder :point_right: __dump/0__) is trained with 100000 iterations with batch size 16 and learning rate 0.0005 (with decay); its trend (first 6500 iterations) of learning rate and loss looks like the following during the entire training procedure:
 ![alt text](./loss_lr.jpeg)
 
 
 ## Prediction Instructions
 Can be done upon request
+
+## Known Limitation
+This is merey a toy experiment (hence the trained model shall not be used in any means in crop production) due to the fact that:
+- data is extremely limited
+- no proper k-fold verification
+- very likely over-fitted because of the above two reasons 

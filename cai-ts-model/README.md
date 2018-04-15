@@ -43,10 +43,10 @@ tensorboard --logdir dump
 Then visit http://localhost:6006/
 
 ### Trained model
-The model (training) looks like below (Multivariate Regression: LSTM with BN + DNN):
+The model (training) looks like below (Multivariate Regression: LSTM with BN + DNN):  
 ![alt text](./model.jpeg)
 
-The saved model (under folder :point_right: __dump/0__) is trained with 100000 iterations with batch size 16 and learning rate 0.0005 (with decay); its trend (first 6500 iterations) of learning rate and loss looks like the following during the entire training procedure:
+The saved model (under folder :point_right: __dump/0__) is trained with 100000 iterations with batch size 16 and learning rate 0.0005 (with decay); its trend (first 6500 iterations) of learning rate and loss looks like the following during the entire training procedure:  
 ![alt text](./loss_lr.jpeg)
 
 ### Hyper-params

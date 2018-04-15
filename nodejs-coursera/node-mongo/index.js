@@ -5,6 +5,48 @@ const dboper = require("./operations");
 
 const url = 'mongodb://127.0.0.1:27017/confusion';
 
+MongoClient.connect(url).then((client) => {
+    console.log('Connected successfully to server');
+    const db = client.db("confusion");
+
+    // insert first doc
+    dboper.insertDocument(db, 
+        { name: "FlowerPizza", description: "first pizza" }, 
+        "dishes")
+        .then((res) => {
+            console.log("Insert Document:\n", res.ops);
+
+            // find all docs
+            return dboper.findDocument(db, "dishes");
+        })
+        .then((docs) => {
+            console.log("Found documents:\n", docs);
+
+            // update the only doc
+            return dboper.updateDocument(db, 
+                {name: "FlowerPizza"}, // specify the document by name
+                {description: "updated pizza"}, "dishes");
+        })
+        .then((res) => {
+            console.log("Updated document:\n", res.result);
+
+            // check the updated doc
+            return dboper.findDocument(db, "dishes");
+        })
+        .then((docs) => {
+            console.log("Found updated documents:\n", docs);
+
+            // remove collection
+            return db.dropCollection("dishes");
+        })
+        .then((result) => {
+            console.log("Dropped collection::\n", result);
+            return client.close();
+        })
+        .catch((err) => console.log(err))
+}, (err) => console.log(err)).catch((err) => console.log(err));
+
+/*
 MongoClient.connect(url, (err, client) => {
     assert.equal(err, null);
     console.log('Connected successfully to server');
@@ -41,6 +83,7 @@ MongoClient.connect(url, (err, client) => {
                     });
             });
         });
+    */
 
     /* traditional way
     const collection = db.collection('dishes');
@@ -63,4 +106,4 @@ MongoClient.connect(url, (err, client) => {
     });
     */
     
-});
+//});

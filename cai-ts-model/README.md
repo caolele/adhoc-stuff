@@ -49,6 +49,16 @@ The model (training) looks like below (Multivariate Regression: LSTM with BN + D
 The saved model (under folder :point_right: __dump/0__) is trained with 100000 iterations with batch size 16 and learning rate 0.0005 (with decay); its trend (first 6500 iterations) of learning rate and loss looks like the following during the entire training procedure:
 ![alt text](./loss_lr.jpeg)
 
+### Hyper-params
+In train.py:
+```
+tf.app.flags.DEFINE_integer('ver', 1, 'version number of the model.')
+tf.app.flags.DEFINE_integer('bs', 16, 'batch size of training.')
+tf.app.flags.DEFINE_float('lr', 0.0005, 'initial learning rate.')
+tf.app.flags.DEFINE_float('num_iter', 100000, 'the total number of iterations to be trained.')
+tf.app.flags.DEFINE_float('num_day', 10, 'the number of days in a time-series.')
+tf.app.flags.DEFINE_string('dir', '../dump', 'Working directory.')
+```
 
 ## Prediction Instructions
 Can be done upon request

@@ -85,7 +85,7 @@ def main(_):
 
     # exp model for tfserving
     export_path = os.path.join(FLAGS.dir, str(FLAGS.ver))
-    log.info('Exporting trained model to', export_path)
+    log.info('Exporting trained model to {}'.format(export_path))
     builder = saved_model_builder.SavedModelBuilder(export_path)
     builder.add_meta_graph_and_variables(sess, [tag_constants.SERVING],
                                          signature_def_map={

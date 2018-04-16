@@ -62,10 +62,10 @@ def main(_):
         batch_data, batch_case, batch_label = get_one_batch(data, label, FLAGS.bs, FLAGS.num_day)
 
         _, _ce1, _lr, summary = sess.run([model.optimize, model.loss, model.learning_rate, model.merged],
-                                feed_dict={model.data_rnn: batch_data,
-                                           model.data_nn: batch_case,
-                                           model.label: batch_label,
-                                           model.keep_prob: 0.9})
+                                         feed_dict={model.data_rnn: batch_data,
+                                                    model.data_nn: batch_case,
+                                                    model.label: batch_label,
+                                                    model.keep_prob: 0.9})
 
         log.info("Iteration step {}; loss={}; lr={}".format(itr, _ce1, _lr))
 

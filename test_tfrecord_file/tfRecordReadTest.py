@@ -33,7 +33,7 @@ def read_and_decode(filename):
     return features['kpid'], features['country']
 
 
-f1, f2 = read_and_decode("simplereader_out-00000-of-00004")
+f1, f2 = read_and_decode("tfd2")
 
 f1_batch, f2_batch = tf.train.shuffle_batch([f1, f2],
                                             batch_size=5,
@@ -51,7 +51,7 @@ with tf.Session() as sess:
         for i in range(100):
             val1, val2 = sess.run([f1_batch, f2_batch])
             for j in range(5):
-                print("LALALALA", val1[j])
+                print(val1[j], val2[j])
                 np.savetxt(outfile, [val1[j]], fmt="kpid:%d", delimiter=",")
                 np.savetxt(outfile, [val2[j]], fmt="country:%s", delimiter=",")
                 outfile.write(str.encode("\n"))

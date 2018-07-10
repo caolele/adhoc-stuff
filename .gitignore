@@ -102,3 +102,6 @@ ENV/
 
 # IntelliJ temp files
 .idea/
+
+# big files
+data.csv

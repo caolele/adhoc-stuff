@@ -27,7 +27,7 @@ Y = tf.placeholder(tf.int32, shape=[None])
 
 # Random Forest Parameters
 hparams = tensor_forest.ForestHParams(num_classes=num_classes,
-                                      num_features=100,
+                                      num_features=num_features,
                                       num_trees=num_trees,
                                       max_nodes=max_nodes).fill()
 

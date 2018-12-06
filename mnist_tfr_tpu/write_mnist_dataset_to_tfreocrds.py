@@ -1,3 +1,4 @@
+# python /usr/share/tensorflow/tensorflow/examples/how_tos/reading_data/write_mnist_dataset_to_tfrecords.py --directory=./data
 
 """Converts MNIST data to TFRecords file format with Example protos."""
 from __future__ import absolute_import
@@ -8,11 +9,16 @@ import os
 import sys
 import tensorflow as tf
 from tensorflow.contrib.learn.python.learn.datasets import mnist
+
+
 FLAGS = None
+
 def _int64_feature(value):
   return tf.train.Feature(int64_list=tf.train.Int64List(value=[value]))
+
 def _bytes_feature(value):
   return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
+
 def convert_to(data_set, name):
   """Converts a dataset to tfrecords."""
   images = data_set.images

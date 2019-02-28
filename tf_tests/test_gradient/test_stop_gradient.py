@@ -16,7 +16,8 @@ mult_x_w0 = tf.matmul(x,w0)  # op1
 
 mult_w1_op1 = tf.stop_gradient(tf.matmul(w1,mult_x_w0))  # op2
 
-mult_w2_w0 = tf.stop_gradient(tf.matmul(w2, w0))  # op4
+mult_w2_w0 = tf.matmul(w2, w0)  # op4
+mult_w2_w0 = tf.stop_gradient(mult_w2_w0)
 
 mult_op2_w2 = tf.matmul(mult_w1_op1, w2)  # op3
 

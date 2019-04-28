@@ -105,3 +105,6 @@ ENV/
 
 # big files
 data.csv
+
+# alert fix
+package-lock.json

@@ -4,3 +4,5 @@
 - counting-valleys.py: hackerrank - Implementation - Counting Valleys
 - jumping-on-clouds.py: hackerrank - Implementation - Jumping on the Clouds
 - repeated-string.py: hackerrank - Implementation - Repeated String
+- equality-in-a-array.py: hackerrank - Implementation - Equality in an array
+- ctci-making-anagram.py: hackerrank - PracticeInterview > Preparation Kit > String Manipulation > Strings: Making Anagrams

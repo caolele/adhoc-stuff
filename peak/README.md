@@ -1,0 +1,6 @@
+- binary_search.py: http://codekata.com/kata/kata02-karate-chop/
+- check-magazine.py: hackerrank - hash tables - ransom note
+- hour-glass-sum.py: hackerrank - hash tables - DS
+- counting-valleys.py: hackerrank - Implementation - Counting Valleys
+- jumping-on-clouds.py: hackerrank - Implementation - Jumping on the Clouds
+- repeated-string.py: hackerrank - Implementation - Repeated String

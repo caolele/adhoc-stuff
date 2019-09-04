@@ -6,3 +6,4 @@
 - repeated-string.py: hackerrank - Implementation - Repeated String
 - equality-in-a-array.py: hackerrank - Implementation - Equality in an array
 - ctci-making-anagram.py: hackerrank - PracticeInterview > Preparation Kit > String Manipulation > Strings: Making Anagrams
+- ice-cream-parlor.py: hackerrank - PracticeInterview > Preparation Kit > Search > Hash Tables: Ice Cream Parlor

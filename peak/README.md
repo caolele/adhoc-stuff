@@ -8,3 +8,4 @@
 - ctci-making-anagram.py: hackerrank - PracticeInterview > Preparation Kit > String Manipulation > Strings: Making Anagrams
 - ice-cream-parlor.py: hackerrank - PracticeInterview > Preparation Kit > Search > Hash Tables: 
 - dynamic-array.py: hackerrank - Practice > Data Structures > Arrays > Dynamic Array
+- mark-and-toys.py: hackerrank - Practice > Interview Preparation Kit > Sorting > Mark and Toys

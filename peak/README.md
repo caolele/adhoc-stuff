@@ -9,3 +9,7 @@
 - ice-cream-parlor.py: hackerrank - PracticeInterview > Preparation Kit > Search > Hash Tables: 
 - dynamic-array.py: hackerrank - Practice > Data Structures > Arrays > Dynamic Array
 - mark-and-toys.py: hackerrank - Practice > Interview Preparation Kit > Sorting > Mark and Toys
+- dp-abbreviation.py: hackerrank - as name
+- bst-lowest-common-ancestor.py - hackerrank - as name
+- balanced-brackets.py - hackerrank - Practice > Interview Preparation Kit > Stacks and Queues > Balanced Brackets
+- read-and-libraries.py - hackerrank - Practice > Interview Preparation Kit > GraphsRoads and Libraries

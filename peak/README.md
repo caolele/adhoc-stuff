@@ -13,3 +13,6 @@
 - bst-lowest-common-ancestor.py - hackerrank - as name
 - balanced-brackets.py - hackerrank - Practice > Interview Preparation Kit > Stacks and Queues > Balanced Brackets
 - read-and-libraries.py - hackerrank - Practice > Interview Preparation Kit > GraphsRoads and Libraries
+- strings-anagram.py - hackerrank - Practice > Algorithms > Strings > Anagram
+- vanilla-binary-tree.py: https://www.youtube.com/watch?v=oSWTXtMglKE
+- 

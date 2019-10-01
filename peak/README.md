@@ -17,3 +17,9 @@
 - vanilla-binary-tree.py: https://www.youtube.com/watch?v=oSWTXtMglKE
 - journey-to-the-moon.py
 - inorder-blink-list-from-binary-tree.py - Binary Tree to Doubly Linked List ( Inorder Based) BST to DLL
+- alice-climbing-the-leaderboard.py - hackerrank - Practice > Algorithms > Implementation > Climbing the Leaderboard
+- merge_sort_counting_inversions.py - hackerrank - Practice > Interview Preparation Kit > Sorting > Merge Sort: Counting Inversions
+- the-hurdle-race.py - hackerrank - Practice > Algorithms > Implementation > The Hurdle Race
+- bit_manipulation_cipher.py - hackerrank - Practice > Algorithms > Bit Manipulation > Cipher
+- emas_supercomputer.py -hackerrank - Practice > Algorithms > Implementation > Ema's Supercomputer
+- build_a_palindrome.py -hackerrank - Practice > Algorithms > Strings > Build a Palindrome
